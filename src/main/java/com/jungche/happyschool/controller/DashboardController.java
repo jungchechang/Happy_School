@@ -12,8 +12,6 @@ public class DashboardController {
     public String displayDashboardPage(Model model, Authentication authentication) {
         model.addAttribute("username", authentication.getName());
         model.addAttribute("roles", authentication.getAuthorities());
-
         return "dashboard.html";
-
     }
 }
