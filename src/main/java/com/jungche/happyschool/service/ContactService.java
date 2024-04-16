@@ -1,13 +1,12 @@
 package com.jungche.happyschool.service;
 
-import com.jungche.happyschool.constants.ScholConstants;
+import com.jungche.happyschool.constants.SchoolConstants;
 import com.jungche.happyschool.model.Contact;
 import com.jungche.happyschool.repository.ContactRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 
@@ -22,7 +21,7 @@ public class ContactService {
     private ContactRepository contactRepository;
     public boolean saveMessageDetails(Contact contact){
         boolean isSaved = true;
-        contact.setStatus(ScholConstants.OPEN);
+        contact.setStatus(SchoolConstants.OPEN);
         Contact savedContact = contactRepository.save(contact);
         if(null != savedContact && savedContact.getContactId()>0) {
             isSaved = true;
@@ -41,7 +40,7 @@ public class ContactService {
         boolean isUpdated = false;
         Optional<Contact> contact = contactRepository.findById(id);
         contact.ifPresent(c -> {
-            c.setStatus(ScholConstants.CLOSE);
+            c.setStatus(SchoolConstants.CLOSE);
         });
         Contact savedContact = contactRepository.save(contact.get());
         if(null != savedContact && savedContact.getContactId()>0) {
