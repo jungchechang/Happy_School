@@ -15,18 +15,18 @@ A school management web app with student & admin portal web app created with Spr
 - DB:
     - MySOL in AWS
 ## Screenshot
-### home
+### Home
 
 <img src="readme/home.png" width=700px>
 
-### Amin panel
+### Amin Panel
 
 <img src="readme/admin.png" width=700px>
 
-### Message management
+### Message Management
 
 <img src="readme/message.png" width=700px>
 
-### Course management
+### Course Management
 
 <img src="readme/course.png" width=700px>
