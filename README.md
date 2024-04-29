@@ -19,7 +19,7 @@ A school management web app with student & admin portal web app created with Spr
 
 <img src="readme/home.png" width=700px>
 
-### Amin Panel
+### Admin Panel
 
 <img src="readme/admin.png" width=700px>
 
