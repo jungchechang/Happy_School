@@ -13,7 +13,7 @@ A school management web app with student & admin portal web app created with Spr
     - Thymeleaf
     - Spring Boot Admin
 - DB:
-    - MySOL in AWS
+    - MySQL in AWS
 ## Screenshot
 ### Home
 
