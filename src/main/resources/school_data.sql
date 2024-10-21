@@ -1,3 +1,4 @@
+use happyschool;
 INSERT INTO `holidays` (`day`,`reason`,`type`,`created_at`, `created_by`)
 VALUES (' Jan 1 ','New Year''s Day','FESTIVAL',CURDATE(),'DBA');
 
@@ -30,3 +31,6 @@ VALUES ('STUDENT',CURDATE(),'DBA');
 
 INSERT INTO `person` (`name`,`email`,`mobile_number`,`pwd`,`role_id`,`created_at`, `created_by`)
 VALUES ('Admin','admin@sample.com','12345678980','$2a$10$aa3.QFQbfhgDki4SICXOOec64qbfYYjWsB88Vswrg3dRR4It0wPc.', 1 ,CURDATE(),'DBA');
+
+INSERT INTO `person` (`name`,`email`,`mobile_number`,`pwd`,`role_id`,`created_at`, `created_by`)
+VALUES ('Student','student@sample.com','23456789801','$2a$10$BBqoK/2aZxF4qD4huVSxpeGHpwCMvHuIZv5ZuX/Drxior/6gPB2C6', 2 ,CURDATE(),'DBA');
