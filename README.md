@@ -55,9 +55,13 @@
 5. **Load initial data**:
    - After setting up the schema, load the initial data using school_data.sql
     
-6. Run the application:
+6. **Run the application**:
    ```bash
+   mvn clean install
    mvn spring-boot:run
+7. **Access the application**:
+   ```bash
+   http://localhost:8080
 
 ## Screenshot
 ### Home
