@@ -21,3 +21,12 @@ VALUES (' Sep 5 ','Labor Day','FEDERAL',CURDATE(),'DBA');
 
 INSERT INTO `holidays` (`day`,`reason`,`type`,`created_at`, `created_by`)
 VALUES (' Nov 11 ','Veterans Day','FEDERAL',CURDATE(),'DBA');
+
+INSERT INTO `roles` (`role_name`,`created_at`, `created_by`)
+VALUES ('ADMIN',CURDATE(),'DBA');
+
+INSERT INTO `roles` (`role_name`,`created_at`, `created_by`)
+VALUES ('STUDENT',CURDATE(),'DBA');
+
+INSERT INTO `person` (`name`,`email`,`mobile_number`,`pwd`,`role_id`,`created_at`, `created_by`)
+VALUES ('Admin','admin@sample.com','12345678980','$2a$10$aa3.QFQbfhgDki4SICXOOec64qbfYYjWsB88Vswrg3dRR4It0wPc.', 1 ,CURDATE(),'DBA');
